@@ -44,7 +44,7 @@ export const Analytics: React.FC = () => {
   )
 
   const totalRevenue = revenueData?.reduce((sum, item) => sum + (item.total || 0), 0) || 0
-  const maxRevenue = revenueData && revenueData.length > 0 ? Math.max(...revenueData.map(item => item.total || 0)) : 0
+  // const maxRevenue = revenueData && revenueData.length > 0 ? Math.max(...revenueData.map(item => item.total || 0)) : 0
   
   // Get only the last 5 days with revenue data for better visualization
   const recentRevenueData = revenueData 
